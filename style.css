@@ -181,6 +181,7 @@ body {
 
 /* Content-1:Start */
 .box {
+    opacity: 0;
     width: 350px;
     height: fit-content;
     border-radius: 20px;

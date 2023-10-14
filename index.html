@@ -1,78 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
     <title>GitHub Profile</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section>
+      <form>
         <div class="search-local">
-            <input type="text" id="search-bar" placeholder="Enter Username...">
-            <button id="find">
-                Get<ion-icon name="search-outline" class="search-icon"></ion-icon>
-            </button>
+          <input type="text" id="search-bar" placeholder="Enter Username..." />
+          <button id="find" onclick="getGitHubProfile(event);">
+            Get<ion-icon name="search-outline" class="search-icon"></ion-icon>
+          </button>
         </div>
-        <div class="box1 box">
-            <div class="content">
-                <div class="image">
-                    <img src="" alt="Profile Image">
-                </div>
-                <div class="text">
-                    <p class="name"></p>
-                </div>
-                <br />
-                <div class="level">
-                    <p></p>
-                </div>
-                <div class="button">
-                    <div>
-                        <button class="message" type="button">Message</button>
-                    </div>
-                    <div>
-                        <button class="connect" type="button">Connect</button>
-                    </div>
-                </div>
+      </form>
+      <div class="box1 box">
+        <div class="content">
+          <div class="image">
+            <img
+              src="https://cdn3.vectorstock.com/i/1000x1000/27/97/github-logo-icon-vector-25322797.jpg"
+              alt="Profile Image"
+            />
+          </div>
+          <div class="text">
+            <p class="name"></p>
+          </div>
+          <br />
+          <div class="level">
+            <p></p>
+          </div>
+          <div class="button">
+            <div class="profile">
+              <a href="" target="_blank">
+                <button class="connect" type="button">View Full Profile</button>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="box2 box">
-            <div class="content">
-                <div class="row">
-                    <div class="image">
-                        <img src="" alt="Profile Image">
-                    </div>
-                    <div class="Repos">
-                        <p>Repos</p>
-                        <h5></h5>
-                    </div>
-                    <div class="followers">
-                        <p>Followers</p>
-                        <h5></h5>
-                    </div>
-                    <div class="following">
-                        <p>Following</p>
-                        <h5></h5>
-                    </div>
-                </div>
-                <div class="text">
-                    <p class="name"></p>
-                    <p class="located_at"></p>
-                    <span>On GitHub Since:</span>
-                    <span class="about">
-                    </span>
-                </div>
+      <div class="box2 box">
+        <div class="content">
+          <div class="row">
+            <div class="image">
+              <img src="" alt="Profile Image" />
             </div>
+            <div class="Repos">
+              <p>Repos</p>
+              <h5></h5>
+            </div>
+            <div class="followers">
+              <p>Followers</p>
+              <h5></h5>
+            </div>
+            <div class="following">
+              <p>Following</p>
+              <h5></h5>
+            </div>
+          </div>
+          <div class="text">
+            <p class="name"></p>
+            <p class="located_at"></p>
+            <span>On GitHub Since:</span>
+            <span class="about"> </span>
+          </div>
         </div>
-
+      </div>
     </section>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
 </html>
